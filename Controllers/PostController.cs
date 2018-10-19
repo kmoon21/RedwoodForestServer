@@ -24,7 +24,7 @@ namespace redwoodforest.Controllers
             {
                 return NotFound();
             }
-            return Ok(_context.Post);
+            return Ok(_context.Post.Include("profile"));
         }
         [HttpGet("{id}")]
         public IActionResult GetById(int? id)
