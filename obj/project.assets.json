@@ -11557,23 +11557,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/kmoon/.nuget/packages/": {},
+    "/Users/yunwoochoi/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kmoon/Desktop/Redwood-Forest/server/server.csproj",
+      "projectUniqueName": "/Users/yunwoochoi/Desktop/Redwood/projects/redwood-forest/server/server.csproj",
       "projectName": "server",
-      "projectPath": "/Users/kmoon/Desktop/Redwood-Forest/server/server.csproj",
-      "packagesPath": "/Users/kmoon/.nuget/packages/",
-      "outputPath": "/Users/kmoon/Desktop/Redwood-Forest/server/obj/",
+      "projectPath": "/Users/yunwoochoi/Desktop/Redwood/projects/redwood-forest/server/server.csproj",
+      "packagesPath": "/Users/yunwoochoi/.nuget/packages/",
+      "outputPath": "/Users/yunwoochoi/Desktop/Redwood/projects/redwood-forest/server/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/kmoon/.nuget/NuGet/NuGet.Config"
+        "/Users/yunwoochoi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

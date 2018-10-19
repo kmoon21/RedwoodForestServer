@@ -30,6 +30,8 @@ namespace redwoodforest
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
              var connectionString = Configuration.GetConnectionString("ApiContext");
             services.AddEntityFrameworkNpgsql().AddDbContext<ApiContext>(options => options.UseNpgsql(connectionString));
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,7 +45,8 @@ namespace redwoodforest
             {
                 app.UseHsts();
             }
-
+            app.UseCors(builder =>
+                   builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod());
             // app.UseHttpsRedirection();
             app.UseMvc();
         }
