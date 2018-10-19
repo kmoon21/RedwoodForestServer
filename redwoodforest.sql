@@ -20,18 +20,18 @@ CREATE TABLE "Experience" (
 CREATE TABLE "Profile" (
     profile_id              SERIAL PRIMARY KEY,
     image                   varchar(255),
-    first_name              varchar(50),
-    last_name               varchar(50),
-    location                varchar(50),
-    email                   varchar(50),
-    password                varchar(50),
+    first_name              varchar(255),
+    last_name               varchar(255),
+    location                varchar(255),
+    email                   varchar(255),
+    password                varchar(255),
     gender_id               integer REFERENCES "Gender" (gender_id),
     grad_date_id            integer REFERENCES "GradDate" (grad_date_id),
     experience_id           integer REFERENCES "Experience" (experience_id),
-    current_job             varchar(50),
-    education               varchar(50),
-    skills                  varchar(50),
-    projects                varchar(50)
+    current_job             varchar(255),
+    education               varchar(255),
+    skills                  varchar(255),
+    projects                varchar(255)
 );
 
 CREATE TABLE "Post" (
