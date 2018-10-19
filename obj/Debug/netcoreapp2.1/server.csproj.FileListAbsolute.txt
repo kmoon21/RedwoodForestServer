@@ -1,0 +1,14 @@
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.csprojAssemblyReference.cache
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.csproj.CoreCompileInputs.cache
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.RazorAssemblyInfo.cache
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.RazorAssemblyInfo.cs
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.AssemblyInfoInputs.cache
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.AssemblyInfo.cs
+/Users/kmoon/Desktop/Redwood-Forest/server/bin/Debug/netcoreapp2.1/server.deps.json
+/Users/kmoon/Desktop/Redwood-Forest/server/bin/Debug/netcoreapp2.1/server.runtimeconfig.json
+/Users/kmoon/Desktop/Redwood-Forest/server/bin/Debug/netcoreapp2.1/server.runtimeconfig.dev.json
+/Users/kmoon/Desktop/Redwood-Forest/server/bin/Debug/netcoreapp2.1/server.dll
+/Users/kmoon/Desktop/Redwood-Forest/server/bin/Debug/netcoreapp2.1/server.pdb
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.RazorTargetAssemblyInfo.cache
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.dll
+/Users/kmoon/Desktop/Redwood-Forest/server/obj/Debug/netcoreapp2.1/server.pdb
