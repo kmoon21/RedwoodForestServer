@@ -32,19 +32,8 @@ namespace redwoodforest
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
              var connectionString = Configuration.GetConnectionString("ApiContext");
             services.AddEntityFrameworkNpgsql().AddDbContext<ApiContext>(options => options.UseNpgsql(connectionString));
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options => 
-                    {
-                        options.TokenValidationParameters = new TokenValidationParameters 
-                        {
-                            ValidateIssuer = false,
-                            ValidateLifetime = true,
-                            ValidateAudience = false,
-                            ValidateIssuerSigningKey = true,
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretsuperSecretsuperSecret"))
-                        };
 
-                    });
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +47,8 @@ namespace redwoodforest
             {
                 app.UseHsts();
             }
-
+            app.UseCors(builder =>
+                   builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod());
             // app.UseHttpsRedirection();
             app.UseMvc();
         }
