@@ -76,7 +76,7 @@ namespace redwoodforest.Controllers
             _context.SaveChanges();
             return Ok(_context.Experience.ToList());
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             Experience experience = _context.Experience.Find(id);

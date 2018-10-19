@@ -48,11 +48,13 @@ namespace redwoodforest.Controllers
             return Ok(item);
         }
         [HttpPost]
-        public IActionResult Post([FromBody]Profile profile)
+        public IActionResult Register([FromBody]Profile profile)
         {
+            profile.password = BCrypt.Net.BCrypt.HashPassword(profile.password);
+
             _context.Profile.Add(profile);
             _context.SaveChanges();
-            return Ok(_context.Profile.ToList());
+            return Ok(profile);
         }
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody]Profile profile)
