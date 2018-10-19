@@ -8,11 +8,12 @@ namespace redwoodforest
     {
         [Key]
         public int profile_id { get; set; }
+         public string image { get; set; }
         public string first_name { get; set; }
         public string last_name { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
         public string location { get; set; }
-        public string image { get; set; }
-
         public int gender_id { get; set; }
  
         [ForeignKey("gender_id")]
